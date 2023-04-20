@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style = "height:100%">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>BPMN Modeler</title>
+    <link rel="stylesheet" href="https://unpkg.com/dmn-js@9.4.0/dist/assets/dmn-font/css/dmn.css">
+    <link rel="stylesheet" href="https://unpkg.com/bpmn-js/dist/assets/diagram-js.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bpmn-js/dist/assets/bpmn-font/css/bpmn-embedded.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bpmn-js-color-picker/colors/color-picker.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bpmn-js-properties-panel/dist/assets/properties-panel.css">
+    <link rel="stylesheet" href="https://unpkg.com/bpmn-js@9.3.1/dist/assets/diagram-js.css">
+    <link rel="stylesheet" href="https://unpkg.com/bpmn-js@9.3.1/dist/assets/bpmn-js.css">
+    <link rel="stylesheet" href="https://unpkg.com/bpmn-js@9.3.1/dist/assets/bpmn-font/css/bpmn.css">
+    <link rel="stylesheet" href="https://unpkg.com/diagram-js-minimap@3.0.0/assets/diagram-js-minimap.css">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body style = "height:100%">
+    <div id="canvas" style = "height:95%"></div>
+    <script src="index.js" type="module"></script>
+    <div style="margin-bottom: 1rem;" class="border border-secondary bg-white mb-2">
+      <label for="bpmnfile">Fichier BPMN à importer</label><br />
+      <input class="form-control-file" type="file" id="bpmnfile" name="bpmnfile" />
+      <button id="logger">Hippity hoppity</button>
+    </div>
+
+    <!--
+  This is a distribution of bpmn-js developed and customized for the use Valais government organisations.
+  From bpmn-js:
+  Checkout our advanced examples section to learn more:
+  * https://github.com/bpmn-io/bpmn-js-examples#advanced
+  To get a bit broader overview over how bpmn-js works,
+  follow our walkthrough:
+  * https://bpmn.io/toolkit/bpmn-js/walkthrough/
+  Related starters:
+  * https://raw.githubusercontent.com/bpmn-io/bpmn-js-examples/starter/viewer.html
+-->
+</body>
+
+</html>
