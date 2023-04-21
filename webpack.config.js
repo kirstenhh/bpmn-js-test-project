@@ -13,8 +13,11 @@ module.exports = {
 			},
             {
 				test: /\.bpmnlintrc$/,
-				use: ['bpmnlint-loader'
-				]
+				use: ['bpmnlint-loader'	]
+			},
+			{
+				test:/\.svg$/,
+				use: ['raw-loader']
 			}
         ]
     },

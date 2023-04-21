@@ -1,7 +1,10 @@
 
 import customModule from './custom';
+import ncExtension from './resources/ncmod.json';
 
 import BpmnJS from 'bpmn-js/lib/Modeler';
+
+import './index.css';
 
 let modeler = new BpmnJS({
   container: '#canvas',
@@ -11,6 +14,9 @@ let modeler = new BpmnJS({
   keyboard: {
     bindTo: window
   },
+  moddleExtensions: {
+    nc: ncExtension
+  }
 });
 
 

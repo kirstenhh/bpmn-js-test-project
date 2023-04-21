@@ -1,0 +1,58 @@
+{
+    "name": "NC Modeler",
+    "uri": "http://some-company/schema/bpmn/ncmod",
+    "prefix": "ncmod",
+    "xml": {
+        "tagAlias": "lowerCase"
+    },
+    "types": [
+        {
+            "name": "CaseTask",
+            "extends": [
+                "bpmn:Task"
+            ],
+            "properties": [
+                {
+                    "name": "caseRef",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    "name": "comments",
+                    "isMany": true,
+                    "type": "Comment"
+                }
+            ]
+        },
+        {
+            "name": "ParallelEventGateway",
+            "extends": [
+                "bpmn:Gateway"
+            ],
+            "properties": [
+                {
+                    "name": "Notes",
+                    "isAttr": true,
+                    "type": "String"
+                }
+            ]
+        },
+        {
+            "name": "Comment",
+            "properties": [
+                {
+                    "name": "author",
+                    "isAttr": true,
+                    "type": "String"
+                },
+                {
+                    "name": "text",
+                    "isBody": true,
+                    "type": "String"
+                }
+            ]
+        }
+    ],
+    "emumerations": [],
+    "associations": []
+}
